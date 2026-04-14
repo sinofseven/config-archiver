@@ -3,5 +3,5 @@
 version = 4
 
 [[package]]
-name = "config-backup-archiver"
+name = "config-archiver"
 version = "0.1.0"
