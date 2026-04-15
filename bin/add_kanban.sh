@@ -25,5 +25,11 @@ next_num=$((max_num + 1))
 padded=$(printf "%04d" "$next_num")
 filename="${kanban_dir}/${padded}_${title}.md"
 
-touch "$filename"
+cat > "$filename" <<EOF
+# ${title}
+## 要望
+
+## 目的
+
+EOF
 echo "Created: $filename"
